@@ -12,9 +12,9 @@ class Solution:
                     else:
                         l = mid + 1
             else:
-                    if target >= nums[mid] and target <= nums[h]:
-                        l = mid + 1
-                    else:
-                        h = mid - 1
+                if target >= nums[mid] and target <= nums[h]:
+                    l = mid + 1
+                else:
+                    h = mid - 1
         return -1
         
