@@ -3,8 +3,8 @@ class Solution:
         d = {0: -1}
         total = 0
 
-        for i, num in enumerate(nums):
-            total += num
+        for i in range(len(nums)):
+            total += nums[i]
             r = total % k
 
             if r in d:
